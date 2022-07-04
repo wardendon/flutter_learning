@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
 
-class VisiblityWidget extends StatelessWidget {
-  const VisiblityWidget({Key? key}) : super(key: key);
+class VisibilityWidget extends StatelessWidget {
+  const VisibilityWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
