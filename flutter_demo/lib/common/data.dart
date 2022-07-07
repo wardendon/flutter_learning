@@ -73,13 +73,13 @@ final statelessList = <ContainerInfo>[
       "/radiolisttile"),
   ContainerInfo("GridTileWidget", " Flutter提供的一个通用列表条目结构可指定头、尾、子组件，常用于网格列表。",
       "/gridtile"),
-  ContainerInfo("AboutListTileWidget",
+  ContainerInfo("AboutListTile",
       " 一个点击条目,点击时可以弹出应用相关信息，可指定应用图标、应用名、应用版本号等信息和内部的子组件列表", "/aboutlisttile"),
   ContainerInfo(
-      "SpacerWidget",
+      "Spacer",
       " 只能用于Row、Column和Flex布局中，可利用剩余空间进行占位ie,使用flex属性可以给多个Spacer按比例分配空间。",
       "/spacer"),
-  ContainerInfo("AboutListTileWidget",
+  ContainerInfo("AboutListTile",
       " 一个通用的对话框结构，可指定头、种、尾处的组件。拥有标题、内容的文字样式和边距、影深、形状等属性", "/alertdialog"),
   ContainerInfo("Dialog", " 最简易的对话框面板，包含一个内容组件，可指定影深、背景色、形状等属性", "/dialog"),
   ContainerInfo("AboutDialog",
@@ -96,6 +96,13 @@ final statelessList = <ContainerInfo>[
       "左中右模式等通用结构组件，可指定中间组件距左侧边距及是否居中。源码在AppBar等导航条结构中有使用它",
       "/navigationtoolbar"),
   ContainerInfo("Placeholder", "一个矩形和叉叉等占位组件，可指定颜色、线宽、宽高等属性", "/placeholder"),
+  ContainerInfo("Icon", "各种图标组件", "/icon"),
+  ContainerInfo("Divider", "水平、垂直分割线组件", "/divider"),
+  ContainerInfo(
+      "Others",
+      "包括PreferredSize,BackButton,CloseButton,ModalBarrier,Banners组件",
+      "/others"),
+  ContainerInfo("Cupertino", "iOS风格组件", "/cupertino"),
 ];
 
 final statefulList = <ContainerInfo>[
@@ -103,4 +110,34 @@ final statefulList = <ContainerInfo>[
       'Image', '用于显示一张图片，可以从文件、内存、网络、资源里加载，可以指定适应方式、样式、颜色混合模式、重复模式。', '/image'),
   ContainerInfo(
       'SliverAppBar', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/sliverappbar'),
+  ContainerInfo(
+      'AnimatedContainer', '动画容器，可指定动画但时长和曲线，有动画结束事件', '/animated/container'),
+  ContainerInfo(
+      'AnimatedBuilder',
+      '通过 builder 使动面对应的节点变为局部更新，且可避免子组件刷新，减少构建的时问，提高动画性能。',
+      '/animated/builder'),
+  ContainerInfo('AnimatedList', '强化版的ListView,可以对item进行动画处理，比如在添加、删除item时的动画',
+      '/animated/list'),
+  ContainerInfo(
+      'AnimatedSwitch',
+      'AnimatedCrossFade和AnimatedSwitcher动画，组件切换或组件变化时执行动画，动画方式可以自定义,能指定动画时⻓动画曲线等属性。',
+      '/animated/switcher'),
+  ContainerInfo('AnimatedEffect', '透明动画、边距动画、定位动画、尺寸动画、物理模块动画、主题切换动画、方向定位动画等',
+      '/animated/effect'),
+  ContainerInfo(
+      'Material', 'Material风格组件的核心，可指定颜色、景深、类型、阴影颜色、形状等属性', '/material'),
+  ContainerInfo(
+      'MaterialApp', 'Material应用的顶级组件，包含路由生成器、主题、语言、主页等属性', '/material/app'),
+  ContainerInfo(
+      'WillPopScope',
+      '返回拦截，当一个界面中有WillPopScope组件时，在页面返回时会触发回调，决定时否返回。可用于二次确认退出的场景',
+      '/willpop'),
+  ContainerInfo(
+      'Hero', '可指定标签名，两个界面跳转时具有相同标签等组件会进行共享动画，一个界面中不能存在两个同名的Hero标签', '/hero'),
+  ContainerInfo(
+      'FutureBuilder',
+      '可指定一个Future对象，能够监听异步执行的状态，并在构造器中根据状态构建不同的界面。注意该Flutter对象不能和flutterBuilder同时创建，否则可能过渡刷新',
+      '/future'),
+  ContainerInfo(
+      'TransitionEffect', '透明变换、边距变换、定位变换、尺寸变换、装饰变换等', '/transition/effect'),
 ];
