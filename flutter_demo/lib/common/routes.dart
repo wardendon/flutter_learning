@@ -55,6 +55,14 @@ import 'package:flutter_demo/widget/stateless/theme_widget.dart';
 import 'package:flutter_demo/widget/stateless/useraccountdrawerheader_widget.dart';
 import 'package:flutter_demo/widget/stateless/visibility_widget.dart';
 
+import '../widget/stateful/checkbox_radio_widget.dart';
+import '../widget/stateful/overlay_widget.dart';
+import '../widget/stateful/range_slider_widget.dart';
+import '../widget/stateful/refresh_indicator_widget.dart';
+import '../widget/stateful/slide_widget.dart';
+import '../widget/stateful/snake_bar_widget.dart';
+import '../widget/stateful/stepper_widget.dart';
+
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
   // 无状态组件导航
@@ -115,4 +123,11 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/hero": (context) => const HeroWidget(),
   "/future": (context) => const FutureBuilderWidget(),
   "/transition/effect": (context) => const TransitionEffectWidget(),
+  "/overlay": (context) => const OverlayWidget(),
+  "/stepper": (context) => const StepperWidget(),
+  "/checkbox": (context) => const CheckboxRadioWidget(),
+  "/slider": (context) => const SliderWidget(),
+  "/rangeslider": (context) => RangeSliderWidget(),
+  "/snackbar": (context) => SnackBarWidget(),
+  "/refreshindicator": (context) => RefreshIndicatorWidget(),
 };
