@@ -5,7 +5,7 @@ class ImageWidget extends StatelessWidget {
   final assetsImagePath = 'images/Android_Studio.png';
   final assetsGifPath = 'images/my-gif.gif';
   final netImageUrl =
-      'https://riddler.oss-cn-shanghai.aliyuncs.com/upload/riddler';
+      'https://riddler.oss-cn-shanghai.aliyuncs.com/upload/riddler.jpg';
 
   @override
   Widget build(BuildContext context) {

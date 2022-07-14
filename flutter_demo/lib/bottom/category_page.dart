@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/page/live_away_widget.dart';
+import 'package:flutter_demo/page/multi_render_widget_page.dart';
+import 'package:flutter_demo/page/other_widget_page.dart';
+import 'package:flutter_demo/page/single_render_widget_page.dart';
+import 'package:flutter_demo/page/sliver_widget_page.dart';
 import 'package:flutter_demo/page/stateful_widget_page.dart';
 import 'package:flutter_demo/page/stateless_widget_page.dart';
 
@@ -15,11 +20,11 @@ class _CategoryPageState extends State with SingleTickerProviderStateMixin {
   final tabPages = [
     const StatelessWidgetPage(),
     const StatefulWidgetPage(),
-    Container(),
-    Container(),
-    Container(),
-    Container(),
-    Container()
+    const SingleRenderWidgetPage(),
+    const MultiRenderWidgetPage(),
+    const SliverWidgetPage(),
+    const LiveWidgetPage(),
+    const OtherWidgetPage()
   ];
 
   late TabController _tabController;
@@ -41,7 +46,7 @@ class _CategoryPageState extends State with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         // foregroundColor: Colors.black87,
-        backgroundColor: const Color(0xff5e7987),
+        // backgroundColor: Colors.white,
         title: const Text('分类'),
         centerTitle: true,
         actions: const <Widget>[
