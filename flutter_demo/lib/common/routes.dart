@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/bottom/index.dart';
+import 'package:flutter_demo/sample/demo_pea.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/widget/single/align_padding_widget.dart';
+import 'package:flutter_demo/widget/single/box_widget.dart';
+import 'package:flutter_demo/widget/single/clip_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_container_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_effect_widget.dart';
@@ -74,10 +78,8 @@ import 'package:flutter_demo/widget/stateless/theme_widget.dart';
 import 'package:flutter_demo/widget/stateless/useraccountdrawerheader_widget.dart';
 import 'package:flutter_demo/widget/stateless/visibility_widget.dart';
 
-import '../sample/demo_pea.dart';
-import '../widget/single/align_padding_widget.dart';
-import '../widget/single/box_widget.dart';
-import '../widget/single/clip_widget.dart';
+import '../widget/single/colorfiltered_widget.dart';
+import '../widget/single/custom_pain_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
@@ -158,9 +160,11 @@ Map<String, Widget Function(BuildContext)> routes = {
   "/ink": (context) => const InkResponseWidget(),
   "/progress/indicator": (context) => const LinearProgressIndicatorWidget(),
   "/selectable": (context) => const SelectableTextWidget(),
-
+  //单渲染
   "/clip": (context) => const ClipWidget(),
   "/box": (context) => const BoxWidget(),
   "/align": (context) => const AlignPaddingWidget(),
   "/pea": (context) => const DemoPae(),
+  "/custompaint": (context) => const CustomPaintWidget(),
+  "/colorfiltered": (context) => const ColorFilteredWidget(),
 };

@@ -17,7 +17,7 @@ class NewWidget extends StatelessWidget {
       // 装饰整个Container
       decoration: BoxDecoration(
         border: Border.all(width: 1.0, color: info.color),
-        color: info.color.withAlpha(77),
+        color: info.color.withAlpha(33),
         borderRadius: const BorderRadius.all(Radius.circular(10.0)),
       ),
       // color: info.color,
@@ -32,7 +32,7 @@ class NewWidget extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: 260.0),
                 child: Tag(
-                  color: Colors.blue.shade600,
+                  color: Colors.pink.shade600,
                   shadowHeight: 16.0,
                   size: const Size(25, 30),
                 ),

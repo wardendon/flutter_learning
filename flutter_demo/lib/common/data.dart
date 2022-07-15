@@ -180,19 +180,16 @@ final statefulList = <ContainerInfo>[
 // 单渲染组件列表
 final singleRenderList = <NewContainer>[
   NewContainer(
-      'Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip', Colors.blue),
+      'Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip', Colors.pink),
   NewContainer('Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box',
       Colors.blue),
-  NewContainer('AlignPadding', '对齐组件】基线组件、边距组件', '/align', Colors.blue),
+  NewContainer('AlignPadding', '对齐组件】基线组件、边距组件', '/align', Colors.green),
+  NewContainer('CustomPaint', '⾃定义绘制，可实现⼀些复杂的⾃定义绘制组件，是Flutter中⾃定义组件的灵魂组件。',
+      '/custompaint', Colors.deepOrangeAccent),
+  NewContainer('ColorFiltered', '滤⾊器，可容纳⼀个⼦组件，并将组件按照29种叠⾊模式和任意组件混合，⾮常强⼤。',
+      '/colorfiltered', Colors.cyan),
   // ContainerInfo('CustomPaint', '绘制组件', '/custom_paint'),
 ];
-// final singleRenderList = <ContainerInfo>[
-//   ContainerInfo('Clip', '椭圆裁剪，可容纳一个子组件，并将其以宽高为⻓轴和短轴进行椭圆裁切', '/clip'),
-//   ContainerInfo(
-//       'Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box'),
-//   ContainerInfo('AlignPadding', '对齐组件】基线组件、边距组件', '/align'),
-//   // ContainerInfo('CustomPaint', '绘制组件', '/custom_paint'),
-// ];
 
 // 多渲染
 final multiRenderList = <NewContainer>[];
